@@ -7,22 +7,12 @@
 </head>
 
 <body>
-  <audio id="divAudio">
-   <source src=JewXxxtentacion.mp3 type="audio/mp3">
-</audio>
-
-<script>
-   var vAudio = document.getElementById("divAudio");
-   var hasInit = false;
-   function playMusic()
-   {
-      if(!hasInit)
-      {
-          hasInit = true;
-          vAudio.play();
-      }
-   }
-</script>
+  <audio src="JewXxxtentacion.mp3" id="my_audio" loop="loop"></audio>
+  <script type="text/javascript">
+    window.onload=function(){
+      document.getElementById("my_audio").play();
+    }
+  </script>
   <img src=eljew.png width=400px>
 </body>
 </html>

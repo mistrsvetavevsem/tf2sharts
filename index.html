@@ -7,12 +7,23 @@
 </head>
 
 <body>
-  <audio src="JewXxxtentacion.mp3" id="my_audio" loop="loop"></audio>
-  <script type="text/javascript">
-    window.onload=function(){
-      document.getElementById("my_audio").play();
-    }
-  </script>
+  <audio id="myAudio">
+  <source src="JewXxxtentacion.mp3" type="audio/mp3">
+    
+    <script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+      
+      
+</script>
+    <a onmouseover="playAudio()"> </a>
   <img src=eljew.png width=400px>
 </body>
 </html>

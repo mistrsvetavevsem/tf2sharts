@@ -4,10 +4,23 @@
   <link rel="icon" href="favicon.png">
 </head>
 <body>
-  <iframe src="250-milliseconds-of-silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-  <audio id="player" autoplay loop>
-    <source src="JewXxxtentacion.mp3" type="audio/mp3">
+  
+  <audio id="divAudio">
+   <source src="JewXxxtentacion.mp3" type="audio/mp3">
 </audio>
+
+<script>
+   var vAudio = document.getElementById("divAudio");
+   var hasInit = false;
+   function playMusic()
+   {
+      if(!hasInit)
+      {
+          hasInit = true;
+          vAudio.play();
+      }
+   }
+</script>
   <img src=eljew.png width=400px>
 </body>
 </html>
